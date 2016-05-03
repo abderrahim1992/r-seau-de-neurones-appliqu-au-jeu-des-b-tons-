@@ -37,7 +37,6 @@ class Neuron:
     def __init__(self,network,index):
         self.network = network
         self.index = index
-        self.connections = {}
     def makeConnections(self,maxDist,nbSticks,baseWeight):
         if self.index!=nbSticks: nb=maxDist*2 +1
         else: nb=maxDist +1
@@ -51,7 +50,8 @@ class Neuron:
         return neuron
     def testNeuron(self,inValue):
         # TODO renvoie un booléen : True si la différence entre la 'inValue' et la valeur du neurone actuel est comprise entre 1 et 3 inclus
-        if 1 <= inValue <= 3 && 1 <= neuron <= 3
+        #fait
+        if (1 <= inValue - neuron <= 3):
             return True
         return False    
     def recompenseConnection(self,neuron):

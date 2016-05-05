@@ -1,10 +1,10 @@
 from Game import *
 from Player import *
 from Neuron import *
-jeu = Game(15)
-joueur1 = CPUPlayer("Albert1", 'hard', 15)
-joueur2 = CPUPlayer("Albert2", 'hard', 15)
-for i in range(100) :
-    jeu.start(joueur1, joueur2, False)
-print(joueur1.getNbWin())
-print(joueur2.getNbWin())
+game = Game(15)
+player1 = CPUPlayer("cpu1", 'hard', 15)
+player2 = CPUPlayer("cpu2", 'hard', 15)
+for i in range(200) :
+    game.start(player1, player2, False)
+print(player1.getNbWin())
+print(player2.getNbWin())
